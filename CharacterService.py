@@ -43,15 +43,16 @@ class CharacterService():
         return filtered_character
     
     
-services = CharacterService()
-attributes = ['name', 'status', 'species']
-characters_list = [1,2,3,4,5]
 
-character_group = services.get_multiple_characters(characters_list)
-print(character_group)
+# services = CharacterService()
+# attributes = ['name', 'status', 'species']
+# characters_list = [1,2,3,4,5]
 
-character = services.get_character_by_id("1")
-filtered_character = services.filter_character(5, attributes)
+# character_group = services.get_multiple_characters(characters_list)
+# print(character_group)
+
+# character = services.get_character_by_id("1")
+# filtered_character = services.filter_character(5, attributes)
 #print(filtered_character)
 
 #print(character)
