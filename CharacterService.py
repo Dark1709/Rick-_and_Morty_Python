@@ -31,7 +31,7 @@ class CharacterService():
         characters = []
         for character_id in character_list:
             character = self.get_character_by_id(character_id)
-            characters.append({character})
+            characters.append(character.__dict__)
         return characters
     
     
@@ -52,6 +52,6 @@ print(character_group)
 
 character = services.get_character_by_id("1")
 filtered_character = services.filter_character(5, attributes)
-print(filtered_character)
+#print(filtered_character)
 
-print(character)
+#print(character)
